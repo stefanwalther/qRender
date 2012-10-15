@@ -1,0 +1,29 @@
+<script id="renderTemplate" type="text/x-jsrender">
+<div class="bookstore_authorList">
+	<div class="bookstore_image">
+		<img src="{{:#data[3].text}}" hspace="0" vspace="0" />
+	</div>
+	<div class="bookstore_bookTitle">
+		{{:#data[0].text}}
+	</div>
+	<div class="bookstore_author">
+		Author: <a href="{{:#data[2].text}}" target="_blank">
+		{{:#data[1].text}}
+		</a>
+	</div>
+	<div class="bookstore_language">
+		Language: {{:#data[5].text}}
+	</div>
+	<div class="bookstore_openlink">
+		<a href="{{:#data[4].text}}" target="_blank">Buy book on amazon.de</a>
+	</div>
+	<div class="bookstore_price_container">
+		<span class="bookstore_price_label">Price:</span>
+		<span class="bookstore_price">EUR {{:#data[6].text}}</span>
+	</div>
+	<div class="clearAll" />
+	<hr />
+</div>
+</script>	
+
+	

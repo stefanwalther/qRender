@@ -1,0 +1,11 @@
+
+<ul id="baseTemplateObject"></ul>
+
+<script id="renderTemplate" type="text/x-jsrender">
+{{for #data[0] tmpl="#innerTemplate"}}
+</script>
+
+<script id="innerTemplate" type="text/x-jsrender">
+	<li class="simpleStyle">{{:text}}</li>
+</script>
+

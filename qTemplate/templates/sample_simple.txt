@@ -1,0 +1,5 @@
+<script id="renderTemplate" type="text/x-jsrender">
+	<div class="simpleStyle">{{:#index+1}}: <b>{{:#data[0].text}}</b> ({{:#data[1].text}})</div>
+</script>
+
+	

@@ -1,0 +1,116 @@
+<div class="ToolWindow-MainBody" avq="foldOutMenu:." style="overflow: visible !important; float: left;height:1000px;">
+  <div class="prop-accordion" avq="accordion:.">
+    <h3 class="prop-h3 accordion-shadow">
+      <a href="#">
+        Template
+      </a>
+    </h3>
+    <div class="prop-grid_container accordion-shadow-enabler" style="overflow:auto;">
+      <div class="prop-grid_clear prop-grid_top-vertical-spacer-12px prop-grid_last"></div>
+      <div class='prop-grid_clear prop-grid_prepend-1 prop-grid_span-14' style="height:auto;text-align:justify;padding-top:10px;">
+        <i>You can either define just a file (which should be located in the "templates" directory of this extension) or define any valid Url.</i>
+        <br/>
+        <br/>
+        For further information how you can define your templates please review the demos at <a href="http://borismoore.github.com/jsrender/demos/demos.html" title="Open http://borismoore.github.com/jsrender/demos/ in your browser." target="_blank" class="qTemplate_Link">http://borismoore.github.com/jsrender/demos/</a>
+      </div>
+      <div class="prop-grid_clear prop-grid_top-vertical-spacer-12px prop-grid_last"></div>
+
+      <div class="prop-grid_container accordion-shadow-enabler" style="overflow:auto;" >
+        <div style='padding-left:10; padding-top:5;' class='prop-grid_prepend-1 prop-grid_span-10 prop-grid_last'>
+          <input type="radio" name="templateMode" value="0" avq='edit:.Chart.Text.0.Content' selected='selected'>External Template</input>
+          <input type="radio" name="templateMode" value="1" avq='edit:.Chart.Text.0.Content'>Direct</input>
+        </div>
+        <br />
+      </div>
+
+      <div avq="hide:.Chart.Text.0.Content:1">
+        <div class="prop-grid_clear prop-grid_top-vertical-spacer-12px prop-grid_last"></div>
+        <div class='prop-grid_clear prop-grid_prepend-1 prop-grid_span-5' avq='prop_label'>Template File:</div>
+        <div class='prop-grid_span-10 prop-grid_last'>
+          <div class='popup-grid_span-7 popup-grid_last' style='width:180px;' avq='prop_editexpression:.Chart.Text.1.Content'></div>
+        </div>
+        
+
+        <br />
+      </div>
+      <div avq="hide:.Chart.Text.0.Content:0">
+        <div class='prop-grid_clear prop-grid_prepend-1' avq='prop_label'>Direct Template:</div>
+        <div class='prop-grid_span-10' style='margin-left:20px;'>
+          <textarea cols="53" rows="10" style='width:280px; height:130px;font-family:Courier New;' wrap='off' avq='edit:.Chart.Text.2.Content'></textarea>
+        </div>
+      </div>
+
+    </div>
+
+    <h3 class="prop-h3 accordion-shadow">
+      <a href="#">
+        Style Options
+      </a>
+    </h3>
+    <div class="prop-grid_container accordion-shadow-enabler" style="overflow:auto;">
+      <div class="prop-grid_clear prop-grid_top-vertical-spacer-12px prop-grid_last"></div>
+
+      <div class='prop-grid_clear prop-grid_prepend-1 prop-grid_span-5' avq='prop_label'>Custom CSS:</div>
+      <div class='prop-grid_span-10 prop-grid_last'>
+        <div class='popup-grid_span-7 popup-grid_last' style='width:180px;' avq='prop_editexpression:.Chart.Text.3.Content'></div>
+      </div>
+      <div class='prop-grid_clear prop-grid_prepend-2 prop-grid_span-13' style="height:auto;text-align:justify;">
+        <i>Either use a style sheet located in the "templatestyles" directory of your installed extension or use any valid Url pointing to an existing style sheet.</i>
+        <br/><br/>
+        <b>Attention:</b> Use unique <a href="http://www.tizag.com/cssT/class.php" target="_blank" class="qTemplate_Link" title="Open http://www.tizag.com/cssT/class.php in your browser.">CSS classes</a> to prevent any conflicts with other style definitions!
+      </div>
+      <br/>
+      <div class="prop-grid_clear prop-grid_top-vertical-spacer-12px prop-grid_last"></div>
+
+      <div class='prop-grid_clear prop-grid_prepend-1 prop-grid_span-5' avq='prop_label'>Scrolling enabled:</div>
+      <div class='prop-grid_span-10 prop-grid_last'>
+        <div class='prop-grid_clear prop-grid_span-1' avq='prop_checkbox:.Chart.Text.4.Content'></div>
+      </div>
+      <br />
+
+    </div>
+    
+    <h3 class="prop-h3 accordion-shadow">
+      <a href="#">
+        Dimensions and Measures
+      </a>
+    </h3>
+    <div class="prop-grid_container accordion-shadow-enabler" style="overflow:auto;">
+      <div class="prop-grid_clear prop-grid_top-vertical-spacer-12px prop-grid_last"></div>
+
+      <div class='prop-bar-chart-header-clickable' avq='prop_listheader:.Chart.Dimension'>Dimensions</div>
+      <ul avq='list:.Chart.Dimension' class='prop-dyn-sortable prop-130' tabindex='-1'>
+        <li class='ui-state-default prop-sortable-list-li' name='chart-dimension' >
+          <span class='prop-sortable-list-arrow-position' avq='list_movehandle:'></span>
+          <div class='prop-sortable-item-narrow' avq='prop_dynamicDropdown:.Field'></div>
+          <div class='prop-sortable-right-width-56px'>
+            <div class='prop-sortable-width-28px' propicontype='tool' avq='prop_dlgbuttonjqui:.:ExtensionDimDialog.qvpp'></div>
+            <div class='prop-sortable-width-28px' name='sortable-list-item-close-button' propicontype='delete-row' avq='prop_buttonjqui:.Remove'></div>
+          </div>
+        </li>
+      </ul>
+      <div class='prop-bar-chart-header-clickable' avq='prop_listheader:.Chart.Expression'>Expressions</div>
+      <ul avq='list:.Chart.Expression' class='prop-dyn-sortable prop-130' tabindex='-1'>
+        <li class='ui-state-default prop-sortable-list-li' name='chart-measurement' >
+          <span class='prop-sortable-list-arrow-position' avq='list_movehandle:'></span>
+          <div class='prop-sortable-item-narrow' avq='prop_editexpression:.0.Definition'></div>
+          <div class='prop-sortable-right-width-28px'>
+            <div class='prop-sortable-width-28px' name='sortable-list-item-close-button' propicontype='delete-row' avq='prop_buttonjqui:.0.Remove'></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    
+    
+    <h3 class="prop-h3 accordion-shadow" avq="activeAccordionHeader::PropertiesCaptionFoldout.qvpp">
+      <a href="#">Caption</a>
+    </h3>
+    <div class="prop-grid_container accordion-shadow-enabler" avq="panel::Caption.qvpp"></div>
+    <h3 class="prop-h3 accordion-shadow" avq="activeAccordionHeader:.:PropertiesOptionsFoldout.qvpp">
+      <a href="#">Options</a>
+    </h3>
+    <div class="prop-grid_container accordion-shadow-enabler" avq="panel::Options.qvpp"></div>
+  </div>
+  <span class="bottom-gap"></span>
+</div>

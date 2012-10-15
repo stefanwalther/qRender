@@ -1,0 +1,28 @@
+/*
+Styles for the samples ...
+*/
+
+.simpleStyle 
+{
+    font-family:Tahoma, Arial;
+    font-size:10pt;
+}
+
+.simpleTable
+{
+    font-family:Tahoma, Arial;
+    font-size:10pt;
+    margin-top:10px;
+    margin-left:10px;
+    border-style:solid;
+    border-color:#ccc;
+    border-width:1px;
+}
+
+.simpleRow td, .simpleRow th
+{
+    padding:5px 5px 5px 5px;
+    border-style:solid;
+    border-width:1px;    
+    border-color:#ccc;
+}

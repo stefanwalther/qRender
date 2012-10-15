@@ -1,0 +1,84 @@
+
+.bookstore_authorList 
+{
+    
+}
+
+.bookstore_image
+{
+    float:left;
+    padding:10px 10px 10px 10px;
+    width: 150px;
+    text-align:center;
+}
+
+.bookstore_bookTitle 
+{
+    font-family: Tahoma, Arial, Verdana;
+    padding-top:10px;
+    font-weight:bold;
+    font-size:12px;    
+    margin-bottom:10px;
+}
+
+
+.bookstore_author 
+{
+    font-family: Tahoma, Arial, Verdana;
+    font-size:10px;    
+}
+
+.bookstore_language
+{
+    font-family: Tahoma, Arial, Verdana;
+    font-size:10px;    
+}
+
+.bookstore_price_container 
+{
+    margin-top:20px;
+}
+
+.bookstore_price_label 
+{
+    font-family: Tahoma, Arial, Verdana;
+    font-size:12px;
+    color:#666;
+}
+
+.bookstore_price
+{
+    font-family: Tahoma, Arial, Verdana;
+    color:#990000;
+    font-size:16px;
+}
+
+
+.bookstore_openlink 
+{
+    clear:none;
+    float:right;
+    margin-right:40px;
+    margin-top:50px;
+}
+
+
+.bookstore_openlink a:link, a:visited
+{
+    font-family: Tahoma, Arial, Verdana;
+    font-size:14px;    
+    color:blue;    
+    text-decoration:none;
+}
+
+.bookstore_openlink a:hover
+{
+    text-decoration:underline;
+    color:blue;
+}
+
+
+.clearAll 
+{
+    clear: both;
+}

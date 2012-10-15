@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<ExtensionObject Label="qTemplate" Description="Format QlikView data using (web)templates" Type="object">
+
+  <Initiate Name="Caption.Text" Value="qTemplate" />
+  <Initiate Name="Caption.Font.Italic" Value="1" />
+  <Initiate Name="Chart.BgColor.ColorHex" Value="#FFFFE0" />
+  <Initiate Name="Chart.Text.0.Content" Value="0" />
+  <Initiate Name="Chart.Text.1.Content" Value="sample_simple.txt" />
+  <Initiate Name="Chart.Text.4.Content" Value="1" />
+
+
+  <!--Template Type: File/Direct -->
+  <Text Label="0" Type="radio" Initial="0" />
+  
+  <!--Template Location-->
+  <Text Label="1" Type="text"/>
+  
+  <!--Template Text-->
+  <Text Label="2" Type="text" />
+  
+  <!-- Custom Style Sheet -->
+  <Text Label="3" Type="text" />
+  
+  <!-- Scrolling Enabled -->
+  <Text Label="4" Expression="0" Type="checkbox" Width="50" />
+
+  <Dimension Label="Dimensions" Multiple="true"  />
+  <Measurement Label="Expressions" Multiple="true" />
+  
+  
+  <PropertiesPage Version="11" File="qTemplateProps.qvpp"/>
+</ExtensionObject>
